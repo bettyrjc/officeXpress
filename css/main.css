@@ -1,0 +1,219 @@
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+}
+h1{
+    color: blueviolet;
+    font-size: 50px;
+}
+/* header */
+.header{
+    margin: 0;
+    height: 75px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+}
+.properties ul{
+    display: flex ;
+    margin-right: 10px;
+    height: 45px;
+}
+.properties li{
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* main */
+.main{
+    margin: 0;
+    border-bottom: 1px solid gray;
+}
+.main img{
+    width: 100%;
+    height: 80%;;
+}
+/* public */
+.public{
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+.p_one, .public{
+    margin: 0;
+     
+}
+.one_p{
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+    margin: 0;
+}
+.degradado{
+    background: rgb(255,87,87);
+    background: linear-gradient(0deg, rgba(255,87,87,1) 0%, rgba(140,82,255,1) 100%);
+    width: 100vw;
+    position: relative;
+}
+.onep_img{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 400px;
+    height:400px;
+    position: relative;
+    left: 45px;
+    margin: 20px;
+    margin-left: 0;
+
+}
+.onep_img img{
+    width: 100%;
+    height:100%;
+    opacity: 0.7;
+}
+.multiples{
+background-image: url('../img/var.png');
+height: 600px;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-repeat:repeat-x;
+background-position-y: center;
+}
+.con_title{
+    margin-top:60px;
+}
+.p_title_multiples{
+    margin: 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sub_t_black{
+    margin-top: 150px;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    width: 400px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.sub_t{
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.bolsillo{
+    color: #ff5757;
+}
+
+.onep_text{
+    border: 10px solid white;
+    height: 40%;
+    margin: 15px;
+    position: relative;
+    top: 100px
+}
+.p_title{
+    color: white;
+    font-size: 70px;
+    margin: 20px 15px;
+    margin-bottom: 0;
+}
+.p_subtitle{
+    text-align: center;
+    color: #ffde59;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+/* all_cont */
+.letters_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(255,87,87,1) 0%, rgba(140,82,255,1) 100%);
+}
+.container_white{
+    width: 300px;
+    border: 10px solid white;
+}
+.letters_content a{
+    cursor: pointer;
+    color: white;   
+    margin-left: 13%;   
+}
+/* content_products */
+.content_products{
+    display: none;
+}
+.content_products.is-active{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    position: relative;
+}
+.container_p_img{
+    width: 200px;
+    height: 200px;
+}
+.container_p_title{
+    font-size: 15px;
+}
+.container_p_text{
+    font-size: 12px
+}
+/* OFERTAS */
+.gang .letters_content{
+    height: 100px;
+    background-image: url('../img/var.png');
+    background-repeat:repeat-x;
+    background-position-y: center;
+}
+.gang .letters_content a{   
+    margin-left: 23%;  
+    color:  rgba(140,82,255,1)
+}
+.rosa{
+    border:none;
+
+
+}
+
+.gang_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+}
+.gang_product{
+    text-align: center
+}
+/* Fin de OFERTAS */
+
+/* content_aboutUs */
+.content_aboutUs{
+    /* background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(100%, rgba(0,255,255,1))); */
+   height: 400px;
+   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(100%, rgba(0,255,255,1)));
+}
+/* contacts */
+/* footer */
+/* .footer{
+    background: black;
+    height: 100px;
+} */
+/* background: linear-gradient(0deg, rgba(140,82,255,1) 0%, rgba(255,87,87,1) 100%); */
