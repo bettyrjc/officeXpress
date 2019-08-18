@@ -1,6 +1,17 @@
+/* font-family: 'Roboto', sans-serif; */
+/* background: #EFEDED; */
+:root{
+    --cont-background: #E3E3E3;
+    --verdeP: #D2FF69;
+    --azulP: #69dbff;
+    --gris:#606066;  
+    --yellow: #fffd69;
+}
 body{
     margin: 0 auto;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif; 
+    background: var(--cont-background)   
 }
 li{
     list-style-type: none;
@@ -10,6 +21,7 @@ h1{
     color: blueviolet;
     font-size: 50px;
 }
+
 /* header */
 .header{
     margin: 0;
@@ -28,6 +40,11 @@ h1{
 .properties li{
     margin-left: 10px;
     cursor: pointer;
+}
+/* container */
+.container_main{
+    margin: 0 10%;
+    background: white
 }
 /* main */
 .main{
@@ -49,14 +66,13 @@ h1{
 }
 .one_p{
     display: flex;
-    /* justify-content: space-around;
-    align-items: center; */
     margin: 0;
 }
 .degradado{
     background: rgb(255,87,87);
-    background: linear-gradient(0deg, rgba(255,87,87,1) 0%, rgba(140,82,255,1) 100%);
-    width: 100vw;
+    background-image: url('../img/back.png');
+    backgro
+    width: 100%;;
     position: relative;
 }
 .onep_img{
@@ -79,7 +95,7 @@ h1{
 .multiples{
 background-image: url('../img/var.png');
 height: 600px;
-width: 100vw;
+width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -88,13 +104,16 @@ background-repeat:repeat-x;
 background-position-y: center;
 }
 .con_title{
-    margin-top:60px;
+    margin-top:20%;
 }
 .p_title_multiples{
+    margin-top:60px;
     margin: 0;
-    font-size: 60px;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    color: black;
+    font-size: 3rem
 }
 .sub_t_black{
     margin-top: 150px;
@@ -120,14 +139,14 @@ background-position-y: center;
 }
 
 .onep_text{
-    border: 10px solid white;
+    border: 10px solid rgb(68, 59, 59);
     height: 40%;
     margin: 15px;
     position: relative;
     top: 100px
 }
 .p_title{
-    color: white;
+    color: gray;
     font-size: 70px;
     margin: 20px 15px;
     margin-bottom: 0;
@@ -139,6 +158,16 @@ background-position-y: center;
     font-size: 40px;
     text-transform: uppercase;
 }
+.container_Loquesomos{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.imgcont  img{
+    height: 90%;
+    width: 90%
+}
+
 /* all_cont */
 .letters_content{
     display: flex;
@@ -146,7 +175,8 @@ background-position-y: center;
     align-items: center;
     height: 600px;
     margin: 0;
-    background: linear-gradient(0deg, rgba(255,87,87,1) 0%, rgba(140,82,255,1) 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(100%, rgba(0,255,255,1)));
+    /* background: linear-gradient(0deg, rgba(255,87,87,1) 0%, rgba(140,82,255,1) 100%); */
 }
 .container_white{
     width: 300px;
@@ -206,14 +236,13 @@ background-position-y: center;
 
 /* content_aboutUs */
 .content_aboutUs{
-    /* background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(100%, rgba(0,255,255,1))); */
    height: 400px;
-   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,255,0,1)), color-stop(100%, rgba(0,255,255,1)));
+   background: var(--cont-background);
 }
 /* contacts */
 /* footer */
-/* .footer{
+.footer{
     background: black;
     height: 100px;
-} */
+}
 /* background: linear-gradient(0deg, rgba(140,82,255,1) 0%, rgba(255,87,87,1) 100%); */
